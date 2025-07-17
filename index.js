@@ -31,7 +31,7 @@ app.post("/login", async (req, res) => {
   res.send(`Thank You ${username} for voting Tejas k :)`);
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
